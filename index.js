@@ -18,14 +18,14 @@ const app = express();
 
 app.use(
   cors({
-    origin: ["https://beach-house-ticket.vercel.app/"],
-    methods: ["POST", "GET"],
+    origin: ["https://beach-house-ticket.vercel.app"],
+    methods: ["POST", "GET", "PUT", "DELETE"],
     credentials: true,
   })
 );
 
 // Middleware
-app.use(cors());
+//app.use(cors());
 app.use(bodyParser.json());
 
 // Routes
